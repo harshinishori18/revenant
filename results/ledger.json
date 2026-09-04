@@ -1,0 +1,51 @@
+{
+  "batch_size": 8000,
+  "exposure": 10266286.18,
+  "policies": {
+    "do_nothing": {
+      "recovered": 0.0,
+      "recovery_rate": 0.0,
+      "share_of_exposure": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "actions": 0,
+      "nudges": 0,
+      "blocked": 0,
+      "escalated": 0,
+      "declined": 8000
+    },
+    "legacy_retry_T30": {
+      "recovered": 3727559.54,
+      "recovery_rate": 0.424375,
+      "share_of_exposure": 0.3630874373307213,
+      "ci95": [
+        3552410.4485,
+        3910749.5875000004
+      ],
+      "actions": 13806,
+      "nudges": 0,
+      "blocked": 4560,
+      "escalated": 45,
+      "declined": 0
+    },
+    "revenant": {
+      "recovered": 6404172.640000001,
+      "recovery_rate": 0.68525,
+      "share_of_exposure": 0.6238061678502713,
+      "ci95": [
+        6194875.153,
+        6616613.414499999
+      ],
+      "actions": 10642,
+      "nudges": 8342,
+      "blocked": 2471,
+      "escalated": 45,
+      "declined": 2
+    }
+  },
+  "uplift_vs_legacy": 2676613.1000000006,
+  "uplift_pct": 0.7180604551792084,
+  "attempt_reduction_pct": 0.22917572070114445
+}

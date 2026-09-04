@@ -1,0 +1,76 @@
+{
+  "legacy_retry_T30": {
+    "recovered": 1468235.3199999998,
+    "rate": 0.43066666666666664,
+    "actions": 5173,
+    "nudges": 0,
+    "blocked": 1693,
+    "escalated": 15,
+    "declined": 0
+  },
+  "full": {
+    "recovered": 2402688.41,
+    "rate": 0.6846666666666666,
+    "ci95": [
+      2276130.147,
+      2537873.6682499996
+    ],
+    "actions": 4016,
+    "nudges": 3131,
+    "blocked": 931,
+    "escalated": 15,
+    "declined": 0
+  },
+  "no_timing": {
+    "recovered": 1975259.53,
+    "rate": 0.583,
+    "ci95": [
+      1854125.31825,
+      2104254.616
+    ],
+    "actions": 4579,
+    "nudges": 4163,
+    "blocked": 1102,
+    "escalated": 15,
+    "declined": 134
+  },
+  "no_nudge": {
+    "recovered": 2205341.02,
+    "rate": 0.6183333333333333,
+    "ci95": [
+      2082466.544,
+      2334802.0354999998
+    ],
+    "actions": 4214,
+    "nudges": 0,
+    "blocked": 1130,
+    "escalated": 15,
+    "declined": 0
+  },
+  "no_cost": {
+    "recovered": 2398311.5,
+    "rate": 0.6846666666666666,
+    "ci95": [
+      2276464.73075,
+      2530044.91875
+    ],
+    "actions": 4016,
+    "nudges": 3214,
+    "blocked": 931,
+    "escalated": 15,
+    "declined": 0
+  },
+  "reason_agnostic": {
+    "recovered": 1734159.02,
+    "rate": 0.509,
+    "ci95": [
+      1621193.16125,
+      1856515.8095
+    ],
+    "actions": 4844,
+    "nudges": 3904,
+    "blocked": 1458,
+    "escalated": 15,
+    "declined": 0
+  }
+}

@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+.env
+artifacts/audit.db
+.DS_Store

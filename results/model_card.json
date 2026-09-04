@@ -1,0 +1,97 @@
+{
+  "n_train": 48000,
+  "n_holdout": 12000,
+  "auc": 0.8334,
+  "brier": 0.1444,
+  "log_loss": 0.4318,
+  "base_rate": 0.2739,
+  "mean_predicted": 0.2685,
+  "calibration": [
+    {
+      "predicted": 0.0004,
+      "observed": 0.0
+    },
+    {
+      "predicted": 0.0035,
+      "observed": 0.0033
+    },
+    {
+      "predicted": 0.0417,
+      "observed": 0.0717
+    },
+    {
+      "predicted": 0.0937,
+      "observed": 0.1292
+    },
+    {
+      "predicted": 0.1475,
+      "observed": 0.165
+    },
+    {
+      "predicted": 0.2332,
+      "observed": 0.2408
+    },
+    {
+      "predicted": 0.3518,
+      "observed": 0.3908
+    },
+    {
+      "predicted": 0.4749,
+      "observed": 0.4692
+    },
+    {
+      "predicted": 0.5963,
+      "observed": 0.5642
+    },
+    {
+      "predicted": 0.7422,
+      "observed": 0.705
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "log_delay",
+      "gain": 122773
+    },
+    {
+      "feature": "reason",
+      "gain": 61055
+    },
+    {
+      "feature": "amount",
+      "gain": 32803
+    },
+    {
+      "feature": "hour",
+      "gain": 17127
+    },
+    {
+      "feature": "strategy",
+      "gain": 11994
+    },
+    {
+      "feature": "bank",
+      "gain": 10292
+    },
+    {
+      "feature": "prior_attempts",
+      "gain": 7974
+    },
+    {
+      "feature": "method",
+      "gain": 6861
+    },
+    {
+      "feature": "device",
+      "gain": 4994
+    },
+    {
+      "feature": "channel",
+      "gain": 4710
+    },
+    {
+      "feature": "network_quality",
+      "gain": 4168
+    }
+  ]
+}

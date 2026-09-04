@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Revenant — Agentic Revenue Recovery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="mark" aria-hidden="true"></div>
+    <div>
+      <div class="brand-name">REVENANT</div>
+      <div class="brand-tag">Agentic revenue recovery for failed payments</div>
+    </div>
+  </div>
+  <nav class="topnav">
+    <a href="#ledger">Ledger</a>
+    <a href="#thesis">Thesis</a>
+    <a href="#console">Console</a>
+    <a href="#copilot">Copilot</a>
+    <a href="#sandbox">Sandbox</a>
+    <a href="#model">Model</a>
+    <span id="health" class="pill pill-idle">connecting</span>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============================ HERO / LEDGER ======================== -->
+  <section id="ledger" class="hero">
+    <p class="eyebrow">Measured on a held-out batch — not projected</p>
+    <h1 class="display">Every failed payment is a decision,<br />not a loss.</h1>
+    <p class="lede">
+      Revenant scores every possible recovery action against a calibrated model,
+      picks the one with the highest expected value, and puts a compliance guard
+      between that decision and the customer. Below is what it recovered on
+      <span id="hero-batch">8,000</span> held-out failed payments it had never seen.
+    </p>
+
+    <div class="stat-row">
+      <div class="stat stat-primary">
+        <div class="stat-label">Recovered by Revenant</div>
+        <div class="stat-value" id="s-recovered">—</div>
+        <div class="stat-sub" id="s-ci">&nbsp;</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Uplift vs. fixed-interval retry</div>
+        <div class="stat-value accent" id="s-uplift">—</div>
+        <div class="stat-sub" id="s-uplift-abs">&nbsp;</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Retry attempts used</div>
+        <div class="stat-value sage" id="s-attempts">—</div>
+        <div class="stat-sub" id="s-attempts-sub">&nbsp;</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Share of at-risk revenue</div>
+        <div class="stat-value" id="s-share">—</div>
+        <div class="stat-sub" id="s-share-sub">&nbsp;</div>
+      </div>
+    </div>
+
+    <div class="panel panel-wide">
+      <div class="panel-head">
+        <h2>Counterfactual ledger</h2>
+        <p>Three policies, one batch, identical latent state and a shared random
+           stream — a paired comparison, so the gap is the policy, not sampling noise.</p>
+      </div>
+      <div id="ledger-chart" class="chart"></div>
+      <div id="ledger-table" class="table-wrap"></div>
+    </div>
+  </section>
+
+  <!-- ============================== THESIS ============================= -->
+  <section id="thesis" class="panel panel-wide">
+    <div class="panel-head">
+      <h2>Why one retry interval can never be right</h2>
+      <p>Modelled probability of success as a function of how long you wait, by
+         failure reason. A dropped session decays in minutes. An empty account
+         recovers over hours. Any single fixed interval is wrong for one of them
+         at all times — which is the entire opportunity.</p>
+    </div>
+    <div id="curve-chart" class="chart chart-tall"></div>
+    <div id="curve-legend" class="legend"></div>
+    <p class="callout" id="curve-callout"></p>
+  </section>
+
+  <!-- ============================== CONSOLE =========================== -->
+  <section id="console" class="panel panel-wide">
+    <div class="panel-head row">
+      <div>
+        <h2>Live decision console</h2>
+        <p>Each card is a real call to <code>POST /api/analyze</code>. Select one
+           to open its immutable audit record.</p>
+      </div>
+      <div class="controls">
+        <button id="btn-run" class="btn btn-primary">Run recovery batch</button>
+        <button id="btn-clear" class="btn btn-ghost">Clear</button>
+      </div>
+    </div>
+
+    <div class="counters" id="counters"></div>
+
+    <div class="console-grid">
+      <div class="feed-col">
+        <div class="col-head">Decision stream</div>
+        <div id="feed" class="feed">
+          <div class="empty">Run a batch to stream live decisions.</div>
+        </div>
+      </div>
+      <div class="detail-col">
+        <div class="col-head">Audit record</div>
+        <div id="detail" class="detail">
+          <div class="empty">Select a decision to inspect the full reasoning chain.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= COPILOT ============================ -->
+  <section id="copilot" class="panel panel-wide glow-panel">
+    <div class="panel-head">
+      <h2>Recovery Copilot</h2>
+      <p>Ask about the live audit trail or the policy sandbox in plain English.
+         The Copilot answers by calling real functions against the database — it
+         cannot report a number it did not retrieve, and every tool call it made
+         is shown alongside the answer.</p>
+    </div>
+
+    <div class="chips" id="copilot-chips"></div>
+
+    <div class="copilot-log" id="copilot-log">
+      <div class="empty">Ask a question, or tap a suggestion above.</div>
+    </div>
+
+    <div class="ask-row">
+      <input id="copilot-input" class="ask-input" type="text" autocomplete="off"
+             placeholder="e.g. what would a 5-attempt cap be worth?" />
+      <button id="copilot-send" class="btn btn-primary">Ask</button>
+    </div>
+  </section>
+
+  <!-- ============================= SANDBOX =========================== -->
+  <section id="sandbox" class="panel panel-wide">
+    <div class="panel-head">
+      <h2>Policy sandbox</h2>
+      <p>Change a compliance setting and measure what it does to the money. Every
+         scenario re-runs the counterfactual simulation on the same payments, so
+         the answer is measured rather than estimated. Risk and AML blocks are
+         not tunable — that rule holds in every scenario.</p>
+    </div>
+
+    <div class="sandbox-grid">
+      <div class="sliders" id="sliders"></div>
+      <div class="sandbox-out">
+        <div id="whatif-result" class="whatif-result">
+          <div class="empty">Move a control, then run the scenario.</div>
+        </div>
+        <div class="controls" style="margin-top:16px">
+          <button id="btn-whatif" class="btn btn-primary">Run scenario</button>
+          <button id="btn-whatif-reset" class="btn btn-ghost">Reset to shipped config</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= GUARD ============================== -->
+  <section class="panel panel-wide">
+    <div class="panel-head">
+      <h2>The compliance guard</h2>
+      <p>These rules are enforced in code, not requested in a prompt. Every
+         proposed action — from the optimiser or from the language model — passes
+         through them, and every verdict is written to the audit log.</p>
+    </div>
+    <div id="rulebook" class="rulebook"></div>
+  </section>
+
+  <!-- ============================= MODEL ============================== -->
+  <section id="model" class="panel panel-wide">
+    <div class="panel-head">
+      <h2>Model card</h2>
+      <p>One model, honestly reported. Held-out rows were never seen in training,
+         and the calibration curve is shown because expected value is only
+         meaningful if the probabilities are.</p>
+    </div>
+    <div class="model-grid">
+      <div id="model-metrics" class="metric-stack"></div>
+      <div>
+        <div class="col-head">Calibration — predicted vs. observed</div>
+        <div id="calib-chart" class="chart"></div>
+      </div>
+      <div>
+        <div class="col-head">Feature importance by gain</div>
+        <div id="gain-chart" class="chart"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div>
+      <strong>Revenant</strong> — built for the Razorpay Buildathon, Track 3:
+      AI Revenue Recovery.
+    </div>
+    <div class="foot-note">
+      The transaction environment is synthetic and calibrated from published PSP
+      failure-mix ranges; nudge delivery is simulated. With production logs the
+      simulator is replaced by doubly-robust off-policy evaluation — the policy,
+      guard and audit layers are unchanged.
+    </div>
+  </footer>
+</main>
+
+<script src="/app.js"></script>
+</body>
+</html>
