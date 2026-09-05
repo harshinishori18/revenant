@@ -72,11 +72,18 @@ Single LightGBM classifier, `P(success | context, reason, action)`:
 | Metric | Value |
 |---|---|
 | Holdout rows | 12,000 |
-| ROC AUC | 0.833 |
+| ROC AUC (single holdout) | 0.833 |
+| ROC AUC (5-fold CV) | 0.8321 ± 0.0013 |
 | Brier score | 0.144 |
+| Brier skill vs. base-rate predictor | 0.274 |
 | Log loss | 0.432 |
 | Observed base rate | 0.274 |
 | Mean predicted | 0.269 |
+
+Cross-validated because a single split can flatter a model by luck. The per-fold
+spread is 0.8301–0.8337, so the result is a property of the model rather than of
+one lucky cut. The Brier skill score is the honest headline: 0.144 means nothing
+on its own, but it is 27.4% better than always predicting the average.
 
 Calibration matters more than AUC here, because expected value is a probability
 multiplied by rupees. A miscalibrated model produces confidently wrong money.
@@ -146,12 +153,15 @@ revenant/
 │   ├── sim.py          counterfactual environment (latent state, outcome function)
 │   ├── policy.py       candidate sweep + expected-value argmax
 │   ├── guard.py        compliance rules, verdicts, audit records
-│   └── agent.py        LLM tie-breaker (bounded tool schema, safe fallback)
+│   ├── agent.py        LLM tie-breaker (bounded tool schema, safe fallback)
+│   ├── copilot.py      question answering over the audit trail, via tool calls
+│   └── whatif.py       policy sandbox — batched counterfactual re-runs
 ├── scripts/
 │   ├── generate_data.py   logged history under a randomised legacy policy
 │   ├── train_model.py     action-conditioned model + calibration report
 │   ├── evaluate.py        paired three-policy ledger with bootstrap CIs
 │   └── ablation.py        capability-removal study
+├── tests/              20 invariant tests — guard rules, leakage, determinism
 ├── server/main.py      FastAPI: decisions, audit trail, ledger, curves
 ├── web/                dashboard — plain HTML/CSS/JS, hand-rolled SVG charts
 ├── artifacts/          trained model + audit.db  (generated)
@@ -175,17 +185,26 @@ python -m scripts.train_model       # ~30 s   trains and reports calibration
 python -m scripts.evaluate          # ~2 min  produces the headline ledger
 python -m scripts.ablation          # ~5 min  optional
 
-uvicorn server.main:app --reload --port 8000
+python -m pytest tests/ -q          # 20 invariant tests
+
+uvicorn server.main:app --reload --reload-dir server --reload-dir core --reload-dir web --port 8000
 ```
 
 Open **http://localhost:8000**.
 
-The LLM tie-breaker is optional. Without a key the system runs fully and the
-optimiser decides everything; with one, ambiguous cases route to the agent:
+Scoping `--reload-dir` matters: reloading on the whole tree includes `venv/`,
+and any package install triggers a reload storm.
+
+AI answering is optional. Without a key the system runs fully and answers from a
+deterministic router; with one, questions route to a tool-calling agent.
 
 ```bash
-cp .env.example .env                # then add ANTHROPIC_API_KEY
+cp .env.example .env                # then add GROQ_API_KEY
 ```
+
+Groq is the default provider — free, no credit card, OpenAI-compatible, and it
+supports function calling, which the Copilot depends on. `ANTHROPIC_API_KEY` is
+used instead if that is the key present.
 
 ### API
 
@@ -197,6 +216,9 @@ cp .env.example .env                # then add ANTHROPIC_API_KEY
 | `GET /api/model-card` | Holdout metrics and calibration curve |
 | `GET /api/rulebook` | The compliance rules in force |
 | `GET /api/curve-by-reason` | P(success) vs. delay, per failure reason |
+| `POST /api/copilot` | Plain-English question → answer, with the lookups it ran |
+| `GET /api/copilot/mode` | Whether AI answering is active, and why not if it is not |
+| `POST /api/whatif` | Re-run the simulation with changed compliance settings |
 
 ```bash
 curl -X POST http://localhost:8000/api/analyze \
@@ -218,14 +240,14 @@ Two things separate a dashboard a judge watches from a product a judge can probe
 
 Ask questions in plain English. The Copilot answers by **calling real functions**
 against the live audit database and the policy sandbox — it cannot state a number
-it did not retrieve, and every lookup it ran is shown beneath the answer and can
-be expanded to the raw JSON.
+it did not retrieve, and the lookups it ran are named beneath each answer.
 
 It works with no API key. A scored intent router maps the question onto the same
-tool functions the language model would call, so the panel always answers. With
-`ANTHROPIC_API_KEY` set, ambiguous or multi-part questions route to a tool-calling
-agent instead; if that call is slow or fails, the deterministic path answers
-rather than leaving a spinner running.
+eight tool functions the language model would call, so the panel always answers.
+With `GROQ_API_KEY` set, every question routes to a tool-calling agent instead;
+if that call is slow or fails, the deterministic path answers rather than leaving
+a spinner running. Model fallback is built in — free tiers retire models without
+warning, so three are tried in order.
 
 ### Policy sandbox
 
@@ -249,6 +271,18 @@ round are independent, so scoring is now round-based and batched: four model cal
 per scenario instead of thousands. Scenarios land in under two seconds, run in a
 threadpool off the event loop, and are hard-bounded by a timeout. Measured under
 concurrent load, a Copilot question returns in ~10 ms while a scenario is running.
+
+---
+
+### Test suite
+
+`pytest tests/ -q` — 20 tests, each pinning an invariant that would invalidate
+the result if it broke silently. Among them: fraud declines cannot be retried
+under any strategy; **the sandbox cannot disable that rule** even with every
+setting at its most permissive; guard constants are restored after a scenario so
+an override cannot leak; latent state provably does not reach the model; the
+opposite-delay thesis is asserted against the data rather than assumed; and
+scenarios are deterministic, so the headline number is reproducible.
 
 ---
 
@@ -278,6 +312,11 @@ concurrent load, a Copilot question returns in ~10 ms while a scenario is runnin
 
 - **Retry fatigue is modelled as a fixed decay.** In reality it is
   customer-specific and would itself be learned.
+
+- **The LLM's contribution is small by design, and small in fact.** It breaks
+  ties on roughly 10–15% of decisions and the ablation shows the result barely
+  moves without it. That is the honest reading: the money comes from the timing
+  model and the reason code, not from the language model.
 
 ## What I would build next
 
