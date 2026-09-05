@@ -210,6 +210,48 @@ the optimiser was never allowed to take.
 
 ---
 
+## Interactive layers
+
+Two things separate a dashboard a judge watches from a product a judge can probe.
+
+### Recovery Copilot
+
+Ask questions in plain English. The Copilot answers by **calling real functions**
+against the live audit database and the policy sandbox — it cannot state a number
+it did not retrieve, and every lookup it ran is shown beneath the answer and can
+be expanded to the raw JSON.
+
+It works with no API key. A scored intent router maps the question onto the same
+tool functions the language model would call, so the panel always answers. With
+`ANTHROPIC_API_KEY` set, ambiguous or multi-part questions route to a tool-calling
+agent instead; if that call is slow or fails, the deterministic path answers
+rather than leaving a spinner running.
+
+### Policy sandbox
+
+Move a compliance setting and measure what it does to the money. Every scenario
+replays the same payments under the new rule, so the answer is measured rather
+than asserted. `RISK_BLOCK_NO_RETRY` is deliberately not adjustable — some rules
+are business preferences and some are not, and a sandbox has to know which is which.
+
+Representative measured results (600-payment sample):
+
+| Change | Effect |
+|---|---:|
+| Retry limit 3 → 5 | +₹82,113 (+18.9%), 313 more attempts, ~₹262 per extra attempt |
+| Manual review ceiling ₹10k → ₹50k | +₹39,490 (+9.1%) |
+| Minimum gap 15 → 90 min | −₹10,000 (−2.3%) |
+
+**Performance note.** The first implementation scored one payment at a time —
+~2,200 model calls per scenario, ~8 seconds, and it blocked the API worker, which
+also stalled any Copilot question asked meanwhile. Payments within an attempt
+round are independent, so scoring is now round-based and batched: four model calls
+per scenario instead of thousands. Scenarios land in under two seconds, run in a
+threadpool off the event loop, and are hard-bounded by a timeout. Measured under
+concurrent load, a Copilot question returns in ~10 ms while a scenario is running.
+
+---
+
 ## Limitations, stated plainly
 
 - **The transaction environment is synthetic.** No participant has access to real

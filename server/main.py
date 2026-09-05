@@ -27,10 +27,13 @@ import json
 import os
 import sqlite3
 import time
+import asyncio
+import threading
 from contextlib import closing
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.concurrency import run_in_threadpool
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -80,6 +83,10 @@ def _startup() -> None:
     init_db()
     get_policy()          # fail fast at boot if the model artifact is missing
     _load_sample_pool()
+    # Warm the sandbox baseline off the request path. Without this the first
+    # scenario a user runs also pays for computing the comparison point, which
+    # is what made the sandbox feel broken rather than merely slow.
+    threading.Thread(target=whatif.warm, daemon=True).start()
 
 
 # --------------------------------------------------------------------------
@@ -120,7 +127,11 @@ class Txn(BaseModel):
 def health():
     return {"status": "ok",
             "model": guard.MODEL_VERSION,
-            "agent_configured": bool(os.getenv("ANTHROPIC_API_KEY")),
+            # Ask the copilot which provider it can actually use. Checking one
+            # vendor's env var here was a bug: a valid Groq key still reported
+            # "built-in answers" because only Anthropic was being looked for.
+            **copilot.get_mode(),
+            "agent_configured": copilot.get_mode()["key_configured"],
             "sample_pool": len(_POOL)}
 
 
@@ -211,25 +222,53 @@ class WhatIf(BaseModel):
 
 @app.get("/api/whatif/defaults")
 def whatif_defaults():
-    return {"defaults": whatif.defaults(), "tunable": {k: list(v) for k, v in whatif.TUNABLE.items()},
-            "locked": ["RISK_BLOCK_NO_RETRY"]}
+    return {**whatif.schema(), "ready": whatif.is_ready()}
 
 
 @app.post("/api/whatif")
-def whatif_run(cfg: WhatIf):
+async def whatif_run(cfg: WhatIf):
     overrides = {k: v for k, v in cfg.model_dump().items() if v is not None}
     if not overrides:
-        raise HTTPException(400, "specify at least one parameter to change")
-    return whatif.simulate(overrides)
+        raise HTTPException(400, "Change at least one setting before running a scenario.")
+    # Off the event loop so a scenario never blocks the Copilot or the console,
+    # and hard-bounded so a pathological run surfaces as an error rather than a
+    # spinner that never resolves.
+    try:
+        return await asyncio.wait_for(run_in_threadpool(whatif.simulate, overrides),
+                                      timeout=90)
+    except asyncio.TimeoutError:
+        raise HTTPException(504, "Scenario timed out. Try changing one setting at a time.")
 
 
 class Question(BaseModel):
     question: str = Field(..., min_length=2, max_length=600)
 
 
+@app.get("/api/copilot/mode")
+def copilot_mode():
+    return copilot.get_mode()
+
+
 @app.post("/api/copilot")
-def copilot_ask(q: Question):
-    return copilot.ask(q.question)
+async def copilot_ask(q: Question):
+    """Always returns an answer.
+
+    The Copilot runs off the event loop and is hard-bounded. If the language
+    model is slow or unreachable, the deterministic router answers from the same
+    tool functions instead — the panel never hangs, which matters more in a live
+    demo than the extra fluency does.
+    """
+    try:
+        return await asyncio.wait_for(run_in_threadpool(copilot.ask, q.question),
+                                      timeout=45)
+    except asyncio.TimeoutError:
+        fallback = await run_in_threadpool(copilot.answer_offline, q.question)
+        fallback["mode"] = "deterministic (agent timed out)"
+        return fallback
+    except Exception as exc:  # noqa: BLE001
+        return {"answer": f"I could not complete that lookup ({type(exc).__name__}). "
+                          "Try rephrasing, or ask about the ledger or recent decisions.",
+                "tool_calls": [], "mode": "error"}
 
 
 @app.get("/api/audit/{txn_id}")

@@ -93,5 +93,20 @@
       "feature": "network_quality",
       "gain": 4168
     }
-  ]
+  ],
+  "cv": {
+    "folds": 5,
+    "auc_mean": 0.8321,
+    "auc_std": 0.0013,
+    "brier_mean": 0.1442,
+    "brier_std": 0.0004,
+    "auc_per_fold": [
+      0.8311,
+      0.8327,
+      0.8328,
+      0.8337,
+      0.8301
+    ]
+  },
+  "brier_skill_score": 0.2739
 }

@@ -63,6 +63,7 @@ class Policy:
         self.maps = bundle["maps"]
         self.cols = bundle["feature_cols"]
         self.metrics = bundle.get("metrics", {})
+        self._act_block = None   # cached candidate feature block for batch scoring
 
     def _enc(self, value, col):
         return self.maps[col].get(value, -1)
@@ -123,6 +124,81 @@ class Policy:
                  "expected_value": by_delay[d]["expected_value"]} for d in DELAY_GRID]
 
 
+    # ------------------------------------------------------------------
+    # Batch scoring.
+    #
+    # Scoring one payment at a time means one model call per payment per
+    # attempt. Across a 900-payment scenario that is ~2,200 calls, which is
+    # what made the policy sandbox too slow to be interactive.
+    #
+    # Every payment in a round is independent, so they can be stacked into a
+    # single frame and predicted once. Same arithmetic, ~100x less overhead.
+    # ------------------------------------------------------------------
+    def score_batch(self, txns: list[dict]) -> list[list[dict]]:
+        """Rank candidate actions for many payments in one model call.
+
+        The feature matrix is built with numpy tiling rather than a Python loop
+        over dicts: the candidate columns are identical for every payment and
+        the payment columns are identical for every candidate, so the whole
+        block is two broadcasts instead of ~46,000 dict constructions.
+        """
+        if not txns:
+            return []
+        acts = CANDIDATES
+        n_t, n_a = len(txns), len(acts)
+
+        if self._act_block is None:
+            self._act_block = np.column_stack([
+                np.array([self._enc(a["strategy"], "strategy") for a in acts], float),
+                np.array([self._enc(a["channel"], "channel") for a in acts], float),
+                np.log1p([a["delay_min"] for a in acts]).astype(float),
+            ])
+
+        txn_block = np.empty((n_t, 8), float)
+        for i, t in enumerate(txns):
+            txn_block[i] = (
+                int(t["hour"]), float(t["amount"]), int(t.get("prior_attempts", 0)),
+                self._enc(t["method"], "method"), self._enc(t["bank"], "bank"),
+                self._enc(t["device"], "device"),
+                self._enc(t["network_quality"], "network_quality"),
+                self._enc(t["reason"], "reason"),
+            )
+
+        X = np.hstack([np.repeat(txn_block, n_a, axis=0),
+                       np.tile(self._act_block, (n_t, 1))])
+        frame = pd.DataFrame(X, columns=[
+            "hour", "amount", "prior_attempts", "method", "bank", "device",
+            "network_quality", "reason", "strategy", "channel", "log_delay"])[self.cols]
+        probs = self.model.predict_proba(frame)[:, 1]
+
+        out = []
+        for i, txn in enumerate(txns):
+            amount = float(txn["amount"])
+            block = probs[i * n_a:(i + 1) * n_a]
+            ranked = []
+            for a, p in zip(acts, block):
+                if a["strategy"] == "no_action":
+                    p_use, ev = 0.0, 0.0
+                else:
+                    p_use = float(p)
+                    ev = p_use * amount - (STRATEGY_COST[a["strategy"]] + CHANNEL_COST[a["channel"]])
+                ranked.append({**a, "p_success": round(p_use, 4),
+                               "expected_value": round(float(ev), 2)})
+            ranked.sort(key=lambda r: -r["expected_value"])
+            out.append(ranked)
+        return out
+
+    def decide_batch(self, txns: list[dict]) -> list[dict]:
+        """Best action per payment, in one model call."""
+        results = []
+        for ranked in self.score_batch(txns):
+            top = ranked[0]
+            if top["expected_value"] <= 0:
+                top = {"strategy": "no_action", "delay_min": 0, "channel": "none",
+                       "p_success": 0.0, "expected_value": 0.0}
+            results.append({k: top[k] for k in ("strategy", "delay_min", "channel")})
+        return results
+
 _singleton: Policy | None = None
 
 
@@ -131,3 +207,5 @@ def get_policy() -> Policy:
     if _singleton is None:
         _singleton = Policy()
     return _singleton
+
+

@@ -1,6 +1,6 @@
 [
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000000",
     "amount": 990.04,
     "reason": "card_declined",
@@ -66,7 +66,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000000",
     "amount": 990.04,
     "reason": "card_declined",
@@ -134,7 +134,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000001",
     "amount": 366.66,
     "reason": "bank_timeout",
@@ -200,7 +200,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000001",
     "amount": 366.66,
     "reason": "bank_timeout",
@@ -266,7 +266,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000001",
     "amount": 366.66,
     "reason": "bank_timeout",
@@ -332,7 +332,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000001",
     "amount": 366.66,
     "reason": "bank_timeout",
@@ -400,7 +400,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000002",
     "amount": 2921.76,
     "reason": "bank_timeout",
@@ -466,7 +466,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000002",
     "amount": 2921.76,
     "reason": "bank_timeout",
@@ -532,7 +532,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000002",
     "amount": 2921.76,
     "reason": "bank_timeout",
@@ -600,7 +600,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000003",
     "amount": 198.9,
     "reason": "insufficient_funds",
@@ -666,7 +666,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000004",
     "amount": 79.34,
     "reason": "bank_timeout",
@@ -734,7 +734,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000005",
     "amount": 748.62,
     "reason": "insufficient_funds",
@@ -800,7 +800,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000006",
     "amount": 382.89,
     "reason": "bank_timeout",
@@ -866,7 +866,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000007",
     "amount": 2882.85,
     "reason": "insufficient_funds",
@@ -934,7 +934,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000008",
     "amount": 2490.54,
     "reason": "insufficient_funds",
@@ -1002,7 +1002,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000008",
     "amount": 2490.54,
     "reason": "insufficient_funds",
@@ -1068,7 +1068,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000009",
     "amount": 2978.36,
     "reason": "card_declined",
@@ -1136,7 +1136,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000010",
     "amount": 235.87,
     "reason": "card_declined",
@@ -1202,7 +1202,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000010",
     "amount": 235.87,
     "reason": "card_declined",
@@ -1268,7 +1268,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000011",
     "amount": 1182.75,
     "reason": "insufficient_funds",
@@ -1334,7 +1334,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000011",
     "amount": 1182.75,
     "reason": "insufficient_funds",
@@ -1402,7 +1402,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:29+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000012",
     "amount": 311.76,
     "reason": "insufficient_funds",
@@ -1470,7 +1470,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000013",
     "amount": 4442.11,
     "reason": "bank_timeout",
@@ -1536,7 +1536,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000013",
     "amount": 4442.11,
     "reason": "bank_timeout",
@@ -1602,7 +1602,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000013",
     "amount": 4442.11,
     "reason": "bank_timeout",
@@ -1670,7 +1670,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000014",
     "amount": 83.91,
     "reason": "gateway_error",
@@ -1738,7 +1738,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000014",
     "amount": 83.91,
     "reason": "gateway_error",
@@ -1804,7 +1804,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000015",
     "amount": 251.34,
     "reason": "wrong_otp",
@@ -1870,7 +1870,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000016",
     "amount": 194.68,
     "reason": "card_declined",
@@ -1936,7 +1936,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000016",
     "amount": 194.68,
     "reason": "card_declined",
@@ -2002,7 +2002,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000017",
     "amount": 1638.12,
     "reason": "bank_timeout",
@@ -2068,7 +2068,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000018",
     "amount": 755.61,
     "reason": "card_declined",
@@ -2134,7 +2134,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000019",
     "amount": 7479.02,
     "reason": "insufficient_funds",
@@ -2202,7 +2202,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000020",
     "amount": 1038.11,
     "reason": "wrong_otp",
@@ -2268,7 +2268,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000021",
     "amount": 41.41,
     "reason": "network_drop",
@@ -2334,7 +2334,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000021",
     "amount": 41.41,
     "reason": "network_drop",
@@ -2402,7 +2402,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000022",
     "amount": 3324.31,
     "reason": "wrong_otp",
@@ -2470,7 +2470,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000022",
     "amount": 3324.31,
     "reason": "wrong_otp",
@@ -2538,7 +2538,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000023",
     "amount": 2544.68,
     "reason": "wrong_otp",
@@ -2606,7 +2606,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000024",
     "amount": 2772.86,
     "reason": "wrong_otp",
@@ -2672,7 +2672,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000025",
     "amount": 618.17,
     "reason": "bank_timeout",
@@ -2738,7 +2738,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000025",
     "amount": 618.17,
     "reason": "bank_timeout",
@@ -2804,7 +2804,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000026",
     "amount": 530.97,
     "reason": "insufficient_funds",
@@ -2870,7 +2870,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000026",
     "amount": 530.97,
     "reason": "insufficient_funds",
@@ -2936,7 +2936,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000026",
     "amount": 530.97,
     "reason": "insufficient_funds",
@@ -3004,7 +3004,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000027",
     "amount": 1418.65,
     "reason": "gateway_error",
@@ -3070,7 +3070,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000028",
     "amount": 643.11,
     "reason": "risk_block",
@@ -3138,7 +3138,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000029",
     "amount": 289.1,
     "reason": "bank_timeout",
@@ -3204,7 +3204,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000029",
     "amount": 289.1,
     "reason": "bank_timeout",
@@ -3270,7 +3270,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000029",
     "amount": 289.1,
     "reason": "bank_timeout",
@@ -3336,7 +3336,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000030",
     "amount": 1159.84,
     "reason": "wrong_otp",
@@ -3404,7 +3404,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000031",
     "amount": 119.77,
     "reason": "bank_timeout",
@@ -3470,7 +3470,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000032",
     "amount": 315.45,
     "reason": "network_drop",
@@ -3536,7 +3536,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000032",
     "amount": 315.45,
     "reason": "network_drop",
@@ -3604,7 +3604,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000032",
     "amount": 315.45,
     "reason": "network_drop",
@@ -3672,7 +3672,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000032",
     "amount": 315.45,
     "reason": "network_drop",
@@ -3740,7 +3740,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000033",
     "amount": 517.58,
     "reason": "insufficient_funds",
@@ -3806,7 +3806,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000033",
     "amount": 517.58,
     "reason": "insufficient_funds",
@@ -3874,7 +3874,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000034",
     "amount": 1507.25,
     "reason": "network_drop",
@@ -3940,7 +3940,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000034",
     "amount": 1507.25,
     "reason": "network_drop",
@@ -4008,7 +4008,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000034",
     "amount": 1507.25,
     "reason": "network_drop",
@@ -4076,7 +4076,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000034",
     "amount": 1507.25,
     "reason": "network_drop",
@@ -4144,7 +4144,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000035",
     "amount": 936.23,
     "reason": "bank_timeout",
@@ -4210,7 +4210,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000036",
     "amount": 218.55,
     "reason": "risk_block",
@@ -4278,7 +4278,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000037",
     "amount": 837.29,
     "reason": "insufficient_funds",
@@ -4346,7 +4346,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:20+00:00",
     "txn_id": "eval_000038",
     "amount": 204.48,
     "reason": "card_declined",
@@ -4412,7 +4412,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000039",
     "amount": 888.84,
     "reason": "gateway_error",
@@ -4478,7 +4478,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000040",
     "amount": 2454.85,
     "reason": "risk_block",
@@ -4546,7 +4546,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000041",
     "amount": 1145.25,
     "reason": "card_declined",
@@ -4612,7 +4612,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000042",
     "amount": 436.41,
     "reason": "wrong_otp",
@@ -4678,7 +4678,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000043",
     "amount": 773.97,
     "reason": "network_drop",
@@ -4746,7 +4746,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000044",
     "amount": 764.53,
     "reason": "wrong_otp",
@@ -4814,7 +4814,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000044",
     "amount": 764.53,
     "reason": "wrong_otp",
@@ -4882,7 +4882,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000044",
     "amount": 764.53,
     "reason": "wrong_otp",
@@ -4950,7 +4950,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000045",
     "amount": 710.22,
     "reason": "risk_block",
@@ -5018,7 +5018,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000046",
     "amount": 470.94,
     "reason": "bank_timeout",
@@ -5084,7 +5084,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000047",
     "amount": 49.65,
     "reason": "bank_timeout",
@@ -5150,7 +5150,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000048",
     "amount": 2243.95,
     "reason": "bank_timeout",
@@ -5216,7 +5216,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000049",
     "amount": 781.53,
     "reason": "insufficient_funds",
@@ -5282,7 +5282,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000050",
     "amount": 1231.94,
     "reason": "risk_block",
@@ -5350,7 +5350,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000051",
     "amount": 272.62,
     "reason": "bank_timeout",
@@ -5416,7 +5416,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000051",
     "amount": 272.62,
     "reason": "bank_timeout",
@@ -5482,7 +5482,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000052",
     "amount": 193.02,
     "reason": "wrong_otp",
@@ -5548,7 +5548,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000053",
     "amount": 868.1,
     "reason": "insufficient_funds",
@@ -5616,7 +5616,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000053",
     "amount": 868.1,
     "reason": "insufficient_funds",
@@ -5682,7 +5682,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000053",
     "amount": 868.1,
     "reason": "insufficient_funds",
@@ -5748,7 +5748,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000054",
     "amount": 705.49,
     "reason": "bank_timeout",
@@ -5816,7 +5816,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000055",
     "amount": 75.18,
     "reason": "network_drop",
@@ -5884,7 +5884,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000056",
     "amount": 221.7,
     "reason": "insufficient_funds",
@@ -5950,7 +5950,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000057",
     "amount": 324.42,
     "reason": "insufficient_funds",
@@ -6018,7 +6018,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000058",
     "amount": 819.13,
     "reason": "bank_timeout",
@@ -6084,7 +6084,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000059",
     "amount": 1519.49,
     "reason": "insufficient_funds",
@@ -6152,7 +6152,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000059",
     "amount": 1519.49,
     "reason": "insufficient_funds",
@@ -6220,7 +6220,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000060",
     "amount": 252.92,
     "reason": "card_declined",
@@ -6288,7 +6288,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000060",
     "amount": 252.92,
     "reason": "card_declined",
@@ -6354,7 +6354,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000060",
     "amount": 252.92,
     "reason": "card_declined",
@@ -6422,7 +6422,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000061",
     "amount": 49.65,
     "reason": "bank_timeout",
@@ -6488,7 +6488,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000062",
     "amount": 793.71,
     "reason": "risk_block",
@@ -6556,7 +6556,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000063",
     "amount": 115.24,
     "reason": "network_drop",
@@ -6624,7 +6624,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000064",
     "amount": 4218.45,
     "reason": "network_drop",
@@ -6690,7 +6690,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000064",
     "amount": 4218.45,
     "reason": "network_drop",
@@ -6758,7 +6758,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000065",
     "amount": 126.9,
     "reason": "insufficient_funds",
@@ -6826,7 +6826,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000066",
     "amount": 343.64,
     "reason": "network_drop",
@@ -6892,7 +6892,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000067",
     "amount": 226.76,
     "reason": "bank_timeout",
@@ -6958,7 +6958,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000068",
     "amount": 306.21,
     "reason": "wrong_otp",
@@ -7027,7 +7027,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000068",
     "amount": 306.21,
     "reason": "wrong_otp",
@@ -7095,7 +7095,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000069",
     "amount": 165.46,
     "reason": "network_drop",
@@ -7161,7 +7161,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000070",
     "amount": 458.49,
     "reason": "bank_timeout",
@@ -7227,7 +7227,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000071",
     "amount": 2168.45,
     "reason": "insufficient_funds",
@@ -7295,7 +7295,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000072",
     "amount": 1091.1,
     "reason": "gateway_error",
@@ -7361,7 +7361,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000073",
     "amount": 1295.4,
     "reason": "wrong_otp",
@@ -7427,7 +7427,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000074",
     "amount": 1406.27,
     "reason": "card_declined",
@@ -7495,7 +7495,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:21+00:00",
     "txn_id": "eval_000074",
     "amount": 1406.27,
     "reason": "card_declined",
@@ -7561,7 +7561,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000075",
     "amount": 211.79,
     "reason": "bank_timeout",
@@ -7627,7 +7627,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000076",
     "amount": 450.62,
     "reason": "network_drop",
@@ -7695,7 +7695,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000076",
     "amount": 450.62,
     "reason": "network_drop",
@@ -7763,7 +7763,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000076",
     "amount": 450.62,
     "reason": "network_drop",
@@ -7831,7 +7831,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000077",
     "amount": 2250.17,
     "reason": "insufficient_funds",
@@ -7899,7 +7899,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000078",
     "amount": 152.68,
     "reason": "wrong_otp",
@@ -7967,7 +7967,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000079",
     "amount": 1402.84,
     "reason": "network_drop",
@@ -8036,7 +8036,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000079",
     "amount": 1402.84,
     "reason": "network_drop",
@@ -8104,7 +8104,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000080",
     "amount": 379.96,
     "reason": "insufficient_funds",
@@ -8170,7 +8170,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000081",
     "amount": 22931.7,
     "reason": "card_declined",
@@ -8238,7 +8238,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000082",
     "amount": 229.44,
     "reason": "insufficient_funds",
@@ -8304,7 +8304,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000083",
     "amount": 712.68,
     "reason": "insufficient_funds",
@@ -8370,7 +8370,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000084",
     "amount": 1379.37,
     "reason": "bank_timeout",
@@ -8436,7 +8436,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000085",
     "amount": 8473.07,
     "reason": "wrong_otp",
@@ -8504,7 +8504,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000086",
     "amount": 252.5,
     "reason": "wrong_otp",
@@ -8572,7 +8572,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000087",
     "amount": 108.59,
     "reason": "network_drop",
@@ -8640,7 +8640,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000087",
     "amount": 108.59,
     "reason": "network_drop",
@@ -8708,7 +8708,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000088",
     "amount": 702.17,
     "reason": "risk_block",
@@ -8776,7 +8776,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000089",
     "amount": 257.31,
     "reason": "network_drop",
@@ -8844,7 +8844,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000089",
     "amount": 257.31,
     "reason": "network_drop",
@@ -8912,7 +8912,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000089",
     "amount": 257.31,
     "reason": "network_drop",
@@ -8980,7 +8980,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000090",
     "amount": 2798.54,
     "reason": "card_declined",
@@ -9046,7 +9046,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000091",
     "amount": 681.54,
     "reason": "bank_timeout",
@@ -9112,7 +9112,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000091",
     "amount": 681.54,
     "reason": "bank_timeout",
@@ -9178,7 +9178,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000092",
     "amount": 252.22,
     "reason": "insufficient_funds",
@@ -9244,7 +9244,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:30+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000092",
     "amount": 252.22,
     "reason": "insufficient_funds",
@@ -9310,7 +9310,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000092",
     "amount": 252.22,
     "reason": "insufficient_funds",
@@ -9378,7 +9378,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000093",
     "amount": 329.62,
     "reason": "network_drop",
@@ -9446,7 +9446,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000093",
     "amount": 329.62,
     "reason": "network_drop",
@@ -9514,7 +9514,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000093",
     "amount": 329.62,
     "reason": "network_drop",
@@ -9582,7 +9582,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000094",
     "amount": 256.5,
     "reason": "network_drop",
@@ -9651,7 +9651,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000094",
     "amount": 256.5,
     "reason": "network_drop",
@@ -9719,7 +9719,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000095",
     "amount": 8312.41,
     "reason": "gateway_error",
@@ -9785,7 +9785,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000096",
     "amount": 1340.1,
     "reason": "network_drop",
@@ -9853,7 +9853,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000096",
     "amount": 1340.1,
     "reason": "network_drop",
@@ -9921,7 +9921,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000096",
     "amount": 1340.1,
     "reason": "network_drop",
@@ -9989,7 +9989,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000097",
     "amount": 1302.52,
     "reason": "wrong_otp",
@@ -10055,7 +10055,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000098",
     "amount": 4509.55,
     "reason": "network_drop",
@@ -10123,7 +10123,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000098",
     "amount": 4509.55,
     "reason": "network_drop",
@@ -10191,7 +10191,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000098",
     "amount": 4509.55,
     "reason": "network_drop",
@@ -10259,7 +10259,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000099",
     "amount": 526.6,
     "reason": "wrong_otp",
@@ -10325,7 +10325,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000100",
     "amount": 6215.27,
     "reason": "insufficient_funds",
@@ -10391,7 +10391,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000101",
     "amount": 1174.97,
     "reason": "insufficient_funds",
@@ -10457,7 +10457,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000102",
     "amount": 15766.86,
     "reason": "insufficient_funds",
@@ -10525,7 +10525,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000103",
     "amount": 639.32,
     "reason": "insufficient_funds",
@@ -10591,7 +10591,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000104",
     "amount": 979.15,
     "reason": "network_drop",
@@ -10659,7 +10659,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000104",
     "amount": 979.15,
     "reason": "network_drop",
@@ -10727,7 +10727,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000105",
     "amount": 1856.33,
     "reason": "insufficient_funds",
@@ -10793,7 +10793,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000106",
     "amount": 151.74,
     "reason": "wrong_otp",
@@ -10859,7 +10859,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000107",
     "amount": 2915.7,
     "reason": "bank_timeout",
@@ -10925,7 +10925,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000108",
     "amount": 166.17,
     "reason": "bank_timeout",
@@ -10991,7 +10991,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000109",
     "amount": 477.2,
     "reason": "network_drop",
@@ -11057,7 +11057,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000109",
     "amount": 477.2,
     "reason": "network_drop",
@@ -11125,7 +11125,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000109",
     "amount": 477.2,
     "reason": "network_drop",
@@ -11193,7 +11193,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000110",
     "amount": 383.52,
     "reason": "insufficient_funds",
@@ -11261,7 +11261,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000111",
     "amount": 512.22,
     "reason": "bank_timeout",
@@ -11327,7 +11327,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000112",
     "amount": 761.69,
     "reason": "card_declined",
@@ -11393,7 +11393,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000113",
     "amount": 162.53,
     "reason": "insufficient_funds",
@@ -11459,7 +11459,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000114",
     "amount": 404.81,
     "reason": "insufficient_funds",
@@ -11527,7 +11527,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000114",
     "amount": 404.81,
     "reason": "insufficient_funds",
@@ -11595,7 +11595,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000115",
     "amount": 475.58,
     "reason": "gateway_error",
@@ -11661,7 +11661,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000115",
     "amount": 475.58,
     "reason": "gateway_error",
@@ -11727,7 +11727,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000116",
     "amount": 1057.27,
     "reason": "network_drop",
@@ -11793,7 +11793,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000117",
     "amount": 3194.07,
     "reason": "wrong_otp",
@@ -11859,7 +11859,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000118",
     "amount": 692.0,
     "reason": "network_drop",
@@ -11927,7 +11927,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000118",
     "amount": 692.0,
     "reason": "network_drop",
@@ -11995,7 +11995,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000119",
     "amount": 573.75,
     "reason": "gateway_error",
@@ -12063,7 +12063,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:22+00:00",
     "txn_id": "eval_000120",
     "amount": 314.89,
     "reason": "insufficient_funds",
@@ -12129,7 +12129,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000121",
     "amount": 389.73,
     "reason": "bank_timeout",
@@ -12195,7 +12195,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000122",
     "amount": 182.12,
     "reason": "insufficient_funds",
@@ -12261,7 +12261,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000122",
     "amount": 182.12,
     "reason": "insufficient_funds",
@@ -12327,7 +12327,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000122",
     "amount": 182.12,
     "reason": "insufficient_funds",
@@ -12395,7 +12395,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000122",
     "amount": 182.12,
     "reason": "insufficient_funds",
@@ -12463,7 +12463,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000123",
     "amount": 1423.95,
     "reason": "network_drop",
@@ -12531,7 +12531,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000123",
     "amount": 1423.95,
     "reason": "network_drop",
@@ -12599,7 +12599,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000123",
     "amount": 1423.95,
     "reason": "network_drop",
@@ -12667,7 +12667,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000123",
     "amount": 1423.95,
     "reason": "network_drop",
@@ -12735,7 +12735,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000124",
     "amount": 354.36,
     "reason": "gateway_error",
@@ -12801,7 +12801,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000125",
     "amount": 481.08,
     "reason": "card_declined",
@@ -12869,7 +12869,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000126",
     "amount": 122.12,
     "reason": "risk_block",
@@ -12937,7 +12937,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000127",
     "amount": 363.35,
     "reason": "insufficient_funds",
@@ -13003,7 +13003,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000127",
     "amount": 363.35,
     "reason": "insufficient_funds",
@@ -13071,7 +13071,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000128",
     "amount": 2224.3,
     "reason": "gateway_error",
@@ -13137,7 +13137,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000129",
     "amount": 497.85,
     "reason": "network_drop",
@@ -13205,7 +13205,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000129",
     "amount": 497.85,
     "reason": "network_drop",
@@ -13273,7 +13273,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000130",
     "amount": 575.38,
     "reason": "risk_block",
@@ -13341,7 +13341,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000131",
     "amount": 2467.49,
     "reason": "risk_block",
@@ -13409,7 +13409,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000132",
     "amount": 1246.25,
     "reason": "gateway_error",
@@ -13477,7 +13477,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000133",
     "amount": 746.61,
     "reason": "bank_timeout",
@@ -13543,7 +13543,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000134",
     "amount": 4288.2,
     "reason": "card_declined",
@@ -13611,7 +13611,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000134",
     "amount": 4288.2,
     "reason": "card_declined",
@@ -13677,7 +13677,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000134",
     "amount": 4288.2,
     "reason": "card_declined",
@@ -13745,7 +13745,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000135",
     "amount": 1412.14,
     "reason": "insufficient_funds",
@@ -13813,7 +13813,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000136",
     "amount": 1866.63,
     "reason": "bank_timeout",
@@ -13879,7 +13879,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:23+00:00",
     "txn_id": "eval_000137",
     "amount": 798.52,
     "reason": "network_drop",
@@ -13947,7 +13947,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000138",
     "amount": 798.01,
     "reason": "bank_timeout",
@@ -14013,7 +14013,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000139",
     "amount": 3181.69,
     "reason": "card_declined",
@@ -14079,7 +14079,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000140",
     "amount": 1642.89,
     "reason": "gateway_error",
@@ -14145,7 +14145,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000140",
     "amount": 1642.89,
     "reason": "gateway_error",
@@ -14211,7 +14211,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000141",
     "amount": 113.46,
     "reason": "risk_block",
@@ -14279,7 +14279,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000142",
     "amount": 551.67,
     "reason": "wrong_otp",
@@ -14345,7 +14345,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000142",
     "amount": 551.67,
     "reason": "wrong_otp",
@@ -14413,7 +14413,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000142",
     "amount": 551.67,
     "reason": "wrong_otp",
@@ -14481,7 +14481,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000142",
     "amount": 551.67,
     "reason": "wrong_otp",
@@ -14549,7 +14549,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000143",
     "amount": 937.7,
     "reason": "insufficient_funds",
@@ -14615,7 +14615,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000144",
     "amount": 633.0,
     "reason": "insufficient_funds",
@@ -14681,7 +14681,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000145",
     "amount": 2150.02,
     "reason": "insufficient_funds",
@@ -14749,7 +14749,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000146",
     "amount": 283.34,
     "reason": "bank_timeout",
@@ -14817,7 +14817,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000147",
     "amount": 1801.0,
     "reason": "insufficient_funds",
@@ -14883,7 +14883,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000147",
     "amount": 1801.0,
     "reason": "insufficient_funds",
@@ -14949,7 +14949,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000148",
     "amount": 895.56,
     "reason": "network_drop",
@@ -15017,7 +15017,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000149",
     "amount": 216.82,
     "reason": "network_drop",
@@ -15083,7 +15083,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000150",
     "amount": 518.43,
     "reason": "insufficient_funds",
@@ -15149,7 +15149,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000151",
     "amount": 407.34,
     "reason": "gateway_error",
@@ -15215,7 +15215,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000152",
     "amount": 763.49,
     "reason": "insufficient_funds",
@@ -15281,7 +15281,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000153",
     "amount": 1804.27,
     "reason": "gateway_error",
@@ -15349,7 +15349,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000154",
     "amount": 234.36,
     "reason": "bank_timeout",
@@ -15415,7 +15415,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000154",
     "amount": 234.36,
     "reason": "bank_timeout",
@@ -15483,7 +15483,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000154",
     "amount": 234.36,
     "reason": "bank_timeout",
@@ -15549,7 +15549,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000154",
     "amount": 234.36,
     "reason": "bank_timeout",
@@ -15617,7 +15617,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000155",
     "amount": 187.97,
     "reason": "risk_block",
@@ -15685,7 +15685,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000156",
     "amount": 2140.26,
     "reason": "insufficient_funds",
@@ -15753,7 +15753,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000156",
     "amount": 2140.26,
     "reason": "insufficient_funds",
@@ -15821,7 +15821,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000156",
     "amount": 2140.26,
     "reason": "insufficient_funds",
@@ -15889,7 +15889,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000157",
     "amount": 816.67,
     "reason": "insufficient_funds",
@@ -15957,7 +15957,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:24+00:00",
     "txn_id": "eval_000157",
     "amount": 816.67,
     "reason": "insufficient_funds",
@@ -16023,7 +16023,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:25+00:00",
     "txn_id": "eval_000157",
     "amount": 816.67,
     "reason": "insufficient_funds",
@@ -16091,7 +16091,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:25+00:00",
     "txn_id": "eval_000157",
     "amount": 816.67,
     "reason": "insufficient_funds",
@@ -16159,7 +16159,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:25+00:00",
     "txn_id": "eval_000158",
     "amount": 849.21,
     "reason": "insufficient_funds",
@@ -16225,7 +16225,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:25+00:00",
     "txn_id": "eval_000159",
     "amount": 977.65,
     "reason": "insufficient_funds",
@@ -16293,7 +16293,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:25+00:00",
     "txn_id": "eval_000160",
     "amount": 1040.32,
     "reason": "network_drop",
@@ -16361,7 +16361,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:25+00:00",
     "txn_id": "eval_000160",
     "amount": 1040.32,
     "reason": "network_drop",
@@ -16429,7 +16429,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:25+00:00",
     "txn_id": "eval_000160",
     "amount": 1040.32,
     "reason": "network_drop",
@@ -16497,7 +16497,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:25+00:00",
     "txn_id": "eval_000160",
     "amount": 1040.32,
     "reason": "network_drop",
@@ -16565,7 +16565,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:25+00:00",
     "txn_id": "eval_000161",
     "amount": 1637.49,
     "reason": "wrong_otp",
@@ -16631,7 +16631,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:25+00:00",
     "txn_id": "eval_000162",
     "amount": 594.06,
     "reason": "bank_timeout",
@@ -16697,7 +16697,7 @@
     "latency_ms": null
   },
   {
-    "ts": "2026-09-04T19:01:31+00:00",
+    "ts": "2026-09-05T04:26:25+00:00",
     "txn_id": "eval_000163",
     "amount": 880.19,
     "reason": "insufficient_funds",

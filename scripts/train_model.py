@@ -30,6 +30,7 @@ import pandas as pd
 import lightgbm as lgb
 from sklearn.calibration import calibration_curve
 from sklearn.metrics import brier_score_loss, log_loss, roc_auc_score
+from sklearn.model_selection import StratifiedKFold
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data", "train_log.csv")
@@ -101,6 +102,40 @@ def main() -> None:
     print("\n  top features by gain:")
     for row in metrics["feature_importance"][:6]:
         print(f"    {row['feature']:<18}{row['gain']:>12,}")
+
+    # ---- robustness: 5-fold cross-validation ----
+    # A single split can flatter a model by luck. Reporting the spread across
+    # folds shows the result is a property of the model, not of one lucky cut.
+    aucs, briers = [], []
+    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+    for tr_i, te_i in skf.split(X, y):
+        fold = lgb.LGBMClassifier(
+            n_estimators=700, learning_rate=0.045, num_leaves=64,
+            min_child_samples=40, subsample=0.9, subsample_freq=1,
+            colsample_bytree=0.9, reg_lambda=1.0, verbose=-1, random_state=7)
+        fold.fit(X.iloc[tr_i], y.iloc[tr_i])
+        pf = fold.predict_proba(X.iloc[te_i])[:, 1]
+        aucs.append(float(roc_auc_score(y.iloc[te_i], pf)))
+        briers.append(float(brier_score_loss(y.iloc[te_i], pf)))
+
+    metrics["cv"] = {
+        "folds": 5,
+        "auc_mean": round(float(np.mean(aucs)), 4),
+        "auc_std": round(float(np.std(aucs)), 4),
+        "brier_mean": round(float(np.mean(briers)), 4),
+        "brier_std": round(float(np.std(briers)), 4),
+        "auc_per_fold": [round(a, 4) for a in aucs],
+    }
+    # Brier skill against the naive "always predict the base rate" model —
+    # 0.144 means nothing on its own; the skill score is the honest figure.
+    naive = metrics["base_rate"] * (1 - metrics["base_rate"])
+    metrics["brier_skill_score"] = round(1 - metrics["brier"] / naive, 4)
+
+    print(f"\n  5-fold cross-validation:")
+    print(f"    AUC          : {metrics['cv']['auc_mean']:.4f} +/- {metrics['cv']['auc_std']:.4f}")
+    print(f"    Brier        : {metrics['cv']['brier_mean']:.4f} +/- {metrics['cv']['brier_std']:.4f}")
+    print(f"    per fold     : {metrics['cv']['auc_per_fold']}")
+    print(f"  Brier skill vs base-rate predictor: {metrics['brier_skill_score']:.3f}")
 
     joblib.dump({"model": model, "maps": maps, "feature_cols": FEATURE_COLS,
                  "metrics": metrics},
